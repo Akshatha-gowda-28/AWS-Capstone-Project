@@ -152,9 +152,9 @@ Security
 
 ---
 
-# System Architecture Flow
+## System Architecture Flow
 
-**User Request Flow**
+### User Request Flow
 
 User
 ↓
@@ -166,7 +166,7 @@ Auto Scaling EC2 (Private Subnet)
 ↓
 Amazon RDS (MySQL)
 
-**Image Processing Flow**
+### Image Processing Flow
 
 User Upload
 ↓
@@ -233,7 +233,8 @@ AWS-Capstone-Project (aws-employee-management-system)
 
 ---
 
-# Author
+## Author
 
 Akshatha
 AWS Capstone Project – Employee Management System on AWS
+
