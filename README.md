@@ -156,27 +156,19 @@ Security
 
 ### User Request Flow
 
-User
-↓
-Route 53
-↓
-Application Load Balancer
-↓
-Auto Scaling EC2 (Private Subnet)
-↓
-Amazon RDS (MySQL)
+* User
+* Route 53
+* Application Load Balancer
+* Auto Scaling EC2 (Private Subnet)
+* Amazon RDS (MySQL)
 
 ### Image Processing Flow
 
-User Upload
-↓
-Amazon S3
-↓
-AWS Lambda Trigger
-↓
-DynamoDB Metadata Storage
-↓
-SNS Notification
+* User Upload
+* Amazon S3
+* AWS Lambda Trigger
+* DynamoDB Metadata Storage
+* SNS Notification
 
 ---
 
@@ -235,6 +227,7 @@ AWS-Capstone-Project (aws-employee-management-system)
 
 ## Author
 
-Akshatha
+**Akshatha**
+
 AWS Capstone Project – Employee Management System on AWS
 
