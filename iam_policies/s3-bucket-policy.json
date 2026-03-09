@@ -1,0 +1,34 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowEC2InstanceAccess",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::123456789012:role/MY-EC2-IAM-ROLE"
+            },
+            "Action": "s3:ListBucket",
+            "Resource": "arn:aws:s3:::<your-bucket-name>"
+        },
+        {
+            "Sid": "AllowEC2ObjectAccess",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::123456789012:role/MY-EC2-IAM-ROLE"
+            },
+            "Action": [
+                "s3:GetObject",
+                "s3:PutObject"
+            ],
+            "Resource": "arn:aws:s3:::<your-bucket-name>/*"
+        },
+        {
+            "Sid": "PublicReadAccessForStaticWebsite",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::<your-bucket-name>/*"
+        }
+    ]
+}
+
